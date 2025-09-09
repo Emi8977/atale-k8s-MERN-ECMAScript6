@@ -1,0 +1,14 @@
+# overlays/prod/kustomization.yaml
+namespace: ambiente-atales-prod
+
+
+resources:
+  - ../../base
+  - hpa.yaml
+  # - netpolicy.yaml
+
+patchesStrategicMerge:
+  - patch-backend-deployment.yaml
+  - patch-frontend-deployment.yaml
+  - patch-secret.yaml
+  - patch-configmap.yaml
