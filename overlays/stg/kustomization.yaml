@@ -1,5 +1,5 @@
 # overlays/stg/kustomization.yaml
-namespace: ambiente-atales-stg
+namespace: ambiente-atale-stg
 
 
 resources:
